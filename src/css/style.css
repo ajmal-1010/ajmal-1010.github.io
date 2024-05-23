@@ -1,0 +1,173 @@
+html
+{
+    background: #C0E8FF;
+}
+
+body{
+    background: #C0E8FF;
+}
+.bigtext{
+    font-size: 25px;
+    font-family: Arial;
+    font-weight: bolder;
+    padding: 60px;
+}
+.smalltext{
+    font-size: 18px;
+    font-family: sans-serif;
+    padding: 60px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+h5{
+    font-size: 18px;
+    color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.iconsize{
+    width: 50px;
+}
+.iconpadding{
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.icontext{
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+.fitimage{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: lighter;
+    font-family: monospace;
+}
+
+/*
+Education page
+*/
+.studycontainer{
+    padding: 70px;   
+}
+.card{
+    border: 1px solid black;
+    padding: 0;
+    background-color: #C0E8FF;
+    margin-bottom: 20px;
+}
+.card-header{
+    background-color:rgb(250, 232, 253);
+}
+.underlinelink{
+    text-decoration: underline;
+    text-decoration-color:black ;
+}
+.studyicon{
+    width: 70px;
+}
+.fixedwidth{
+    width: 120px;
+}
+.flexiblewidth{
+    flex-grow: 1;
+}
+
+
+
+/* Applying the animation */
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeSlideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade {
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+}
+.fade-slide {
+    opacity: 0;
+    transform: translateX(30px); /* Initial state matching the animation start */
+    transition: opacity 1.25s ease-out, transform 1.25s ease-out;
+}
+.fade-slide.animate {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-slide-left {
+    opacity: 0;
+    transform: translateX(-30px); /* Initial state matching the animation start */
+    transition: opacity 1.25s ease-out, transform 1.25s ease-out;
+}
+.fade-slide-left.animate {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+/*for small screen*/
+@media only screen and (max-width: 540px) {
+    .bigtext{
+        padding: 5px; 
+        font-size: 15px;
+    }
+    .smalltext{
+        padding: 5px; 
+        font-size: 10px;
+    }
+    .iconsize{
+        width: 25px;
+        height: auto;
+    }
+    .iconpadding{
+        padding: 5px;
+    }
+    .studycontainer{
+        padding: 14px;
+    }
+    
+}
