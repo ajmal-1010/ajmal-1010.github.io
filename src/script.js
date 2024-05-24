@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, options);
 
-    document.querySelectorAll('.fade , .fade-slide, .fade-slide-left').forEach(element => {
+    document.querySelectorAll('.fade , .fade-slide, .fade-slide-down').forEach(element => {
         observer.observe(element);
     });
 });

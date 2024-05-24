@@ -160,22 +160,22 @@ contact page
 @keyframes fadeSlideIn {
     0% {
         opacity: 0;
-        transform: translateX(30px);
+        transform: translateY(25px);
     }
     100% {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateY(0);
     }
 }
 
-@keyframes fadeSlideInLeft {
+@keyframes fadeSlideInDown {
     0% {
         opacity: 0;
-        transform: translateX(-30px);
+        transform: translateY(-25px);
     }
     100% {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateY(0);
     }
 }
 
@@ -190,26 +190,28 @@ contact page
 
 .fade {
     opacity: 0;
+}
+.fade.animate{
     animation: fadeIn 2s ease-out forwards;
 }
 .fade-slide {
     opacity: 0;
-    transform: translateX(30px); /* Initial state matching the animation start */
+    transform: translateY(25px); /* Initial state matching the animation start */
     transition: opacity 1.25s ease-out, transform 1.25s ease-out;
 }
 .fade-slide.animate {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
 }
 
-.fade-slide-left {
+.fade-slide-down {
     opacity: 0;
-    transform: translateX(-30px); /* Initial state matching the animation start */
+    transform: translateY(-30px); /* Initial state matching the animation start */
     transition: opacity 1.25s ease-out, transform 1.25s ease-out;
 }
-.fade-slide-left.animate {
+.fade-slide-down.animate {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
 }
 
 
