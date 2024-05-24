@@ -1,3 +1,4 @@
+//animation
 document.addEventListener('DOMContentLoaded', function() {
     const options = {
         threshold: 0.1
@@ -13,7 +14,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, options);
 
-    document.querySelectorAll('.fade, .fade-slide, .fade-slide-left').forEach(element => {
+    document.querySelectorAll('.fade , .fade-slide, .fade-slide-left').forEach(element => {
         observer.observe(element);
     });
 });
+
+
+

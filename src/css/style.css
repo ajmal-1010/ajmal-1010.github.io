@@ -1,41 +1,64 @@
 html
 {
-    background: #C0E8FF;
+    background: #d3fced;
 }
 
 body{
-    background: #C0E8FF;
+    background: #d3fced;
 }
 .bigtext{
-    font-size: 25px;
+
+    font-size: 30px;
     font-family: Arial;
     font-weight: bolder;
     padding: 60px;
+    text-shadow: 1px 0px 2px black;
 }
 .smalltext{
-    font-size: 18px;
-    font-family: sans-serif;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 1px black;
     padding: 60px;
     padding-bottom: 10px;
     padding-top: 10px;
 }
 h5{
-    font-size: 18px;
-    color: blue;
+    font-size: 22px;
+    color: rgb(28, 114, 176);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    
+    text-shadow: 1px 0px 2px black;
+}
+
+.navbar{
+    padding: 0px;
+    background-color: white;
+    border-bottom: solid rgb(141, 140, 140);
+    border-width: 1px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), /* Bottom shadow */
+    0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link.active h5{
+    font-weight: bold;
+    color: black;   
+}
+.ajmallogo{
+    width: 180px;
+    padding: 0;
 }
 .iconsize{
-    width: 50px;
+    width: 54px;
+    height: auto;
 }
 .iconpadding{
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 .icontext{
     color: black;
+    font-size: 24px;
 }
 
 a{
@@ -63,14 +86,16 @@ a{
 /*
 Education page
 */
-.studycontainer{
-    padding: 70px;   
+.containerpadding{
+    padding: 80px;   
 }
 .card{
-    border: 1px solid black;
+    border: 1px solid rgb(124, 124, 124);
     padding: 0;
-    background-color: #C0E8FF;
+    background-color: white;
     margin-bottom: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), /* Bottom shadow */
+    0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .card-header{
     background-color:rgb(250, 232, 253);
@@ -89,6 +114,46 @@ Education page
     flex-grow: 1;
 }
 
+
+ /*
+ projects page
+ */
+.accordion{
+    padding: 50px;
+}
+.projectname{
+    font-weight: bold;
+    font-size: 26px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+
+/*
+contact page
+*/
+.contacticon{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+      
+}
+.contacticonitem {
+    padding: 25px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+.contacticontext{
+    color: black;
+    padding: 2px;
+    font-size: 20px;
+}
+.ajmalimg{
+    width: 200px;
+    height: auto;
+}
 
 
 /* Applying the animation */
@@ -153,21 +218,62 @@ Education page
 @media only screen and (max-width: 540px) {
     .bigtext{
         padding: 5px; 
-        font-size: 15px;
+        font-size: 14px;
     }
     .smalltext{
         padding: 5px; 
         font-size: 10px;
     }
+    h5{
+        font-size: 14px;
+        color: blue;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-shadow: 1px 0px 2px black;
+    }
     .iconsize{
-        width: 25px;
+        width: 22px;
         height: auto;
+    }
+    .icontext{
+        color: black;
+        font-size: 12px;
     }
     .iconpadding{
         padding: 5px;
     }
-    .studycontainer{
-        padding: 14px;
+    .ajmallogo{
+        width: 140px;
+    }
+
+    .containerpadding{
+        padding: 15px;   
+    }
+    
+    .accordion{
+        padding: 5px;
+    }
+
+    .contacticon{
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+          
+    }
+    .contacticonitem {
+        padding: 5px;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacticontext{
+        color: black;
+        padding: 0px;
+        font-size: 10px;
+    }
+    .ajmalimg{
+        width: 120px;
+        height: auto;
     }
     
 }
