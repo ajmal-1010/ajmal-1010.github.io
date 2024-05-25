@@ -6,6 +6,38 @@ html
 body{
     background: #d3fced;
 }
+
+.loading-page{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(rgb(56, 226, 201),rgb(38, 120, 120),rgb(0, 39, 31));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+}
+#loadsvg{
+    height: 110px;
+    width: 110px;
+    stroke: rgb(255, 255, 255);
+    fill-opacity: 0;
+    stroke-width: 8px;
+    stroke-dasharray: 4500;
+    animation: draw 8s ease;
+}
+@keyframes draw {
+    0%{
+        stroke-dashoffset: 4500;
+    }
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+
 .bigtext{
 
     font-size: 30px;
@@ -43,8 +75,9 @@ h5{
     color: black;   
 }
 .ajmallogo{
-    width: 180px;
+    width: 125px;
     padding: 0;
+    margin: 0;
 }
 .iconsize{
     width: 54px;
@@ -245,7 +278,9 @@ contact page
         padding: 5px;
     }
     .ajmallogo{
-        width: 140px;
+        width: 100px;
+        padding: 0;
+        margin: 0;
     }
 
     .containerpadding{
