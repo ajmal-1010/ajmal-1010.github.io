@@ -1,7 +1,7 @@
 redirectToAnotherPage = function() {
   
     setTimeout(function() {
-    window.location.href = './src/pages/homepage.html';
+    window.location.href = './src/pages/final.html';
         // Set a flag to indicate that redirection has occurred
       }, 3000); // 3000 milliseconds = 3 seconds
   };
